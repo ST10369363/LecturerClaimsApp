@@ -1,0 +1,32 @@
+﻿@model LecturerClaimsApp.Models.LecturerClaim
+
+<h2 style="color: blue;">Claim</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="LecturerName" style="color: black;">Lecturer Name</label>
+        <input type="text" class="form-control" id="LecturerName" name="LecturerName" required style="border-color: blue;" />
+    </div>
+
+    <div class="form-group">
+        <label for="HoursWorked" style="color: black;">Hours Worked</label>
+        <input type="number" class="form-control" id="HoursWorked" name="HoursWorked" required style="border-color: blue;" />
+    </div>
+
+    <div class="form-group">
+        <label for="HourlyRate" style="color: black;">Hourly Rate</label>
+        <input type="number" step="0.01" class="form-control" id="HourlyRate" name="HourlyRate" required style="border-color: blue;" />
+    </div>
+
+    <div class="form-group">
+        <label for="AdditionalNotes" style="color: black;">Additional Notes</label>
+        <textarea class="form-control" id="AdditionalNotes" name="AdditionalNotes" style="border-color: blue;"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="DocumentPath" style="color: black;">Upload Document (Optional)</label>
+        <input type="file" class="form-control" id="DocumentPath" name="DocumentPath" style="border-color: blue;" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="background-color: blue; border-color: black;">Submit</button>
+</form>

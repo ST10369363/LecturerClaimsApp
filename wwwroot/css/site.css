@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+}
+
+h2 {
+    color: blue;
+}
+
+.form-group label {
+    color: white;
+}
+
+.form-control {
+    border-color: blue;
+    background-color: lightblue;
+    color: white;
+}
+
+.btn-primary {
+    background-color: blue;
+    border-color: lightblue;
+}
+
+form {
+    padding: 20px;
+}
